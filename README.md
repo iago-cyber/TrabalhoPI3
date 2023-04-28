@@ -1,2 +1,2 @@
-# TrabalhoPI3
-este é um repositório para o para o trabalho de PI3
+# Trabalho PI 3A
+este é um repositório para o para o trabalho de PI 3A
