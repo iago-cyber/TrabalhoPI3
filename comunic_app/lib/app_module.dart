@@ -1,5 +1,4 @@
 import 'package:comunic_app/src/auth/auth_module.dart';
-import 'package:comunic_app/src/home/login_module.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class AppModule extends Module {

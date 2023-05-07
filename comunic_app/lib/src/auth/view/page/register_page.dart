@@ -1,8 +1,7 @@
+import 'package:comunic_app/src/auth/viewmodel/login_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:localization/localization.dart';
-
-import '../../viewmodel/login_viewmodel.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class _RegisterPageState extends State<RegisterPage> {
   final _passwordController = TextEditingController();
   final _passwordConfirmationController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
-  final _viewModel = Modular.get<LoginViewModel>();
 
   Widget build(BuildContext context) {
   return Scaffold(

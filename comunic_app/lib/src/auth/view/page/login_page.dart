@@ -1,8 +1,8 @@
+import 'package:comunic_app/src/auth/viewmodel/login_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:localization/localization.dart';
 
-import '../../viewmodel/login_viewmodel.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -16,7 +16,6 @@ class _LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
-  final _viewModel = Modular.get<LoginViewModel>();
 
   Widget build(BuildContext context) {
   return Scaffold(
@@ -73,14 +72,14 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 child: Text('Entrar'),
               ),
-              const ElevatedButton(
-                onPressed: null,
-                style: ButtonStyle(
+               ElevatedButton(
+                onPressed: () async => {Navigator.pushNamed(context, 'novaSenha')},
+                style: const ButtonStyle(shadowColor: MaterialStatePropertyAll(Colors.transparent),
                   backgroundColor: MaterialStatePropertyAll(
                     Colors.transparent,
                   ),
                 ),
-                child: Text('Recuperar Senha',style: TextStyle(color: Colors.black),),
+                child: const Text('Recuperar Senha',style: TextStyle(color: Colors.black),),
               ),
                ElevatedButton(
                 onPressed: () async => {Navigator.pushNamed(context, 'registro')},

@@ -4,5 +4,6 @@
     "Menssagem" : "Já é cadastrado ?",
     "idioma" : "Português",
     "senha" : "Senha",
-    "name" : "Nome"
+    "name" : "Nome",
+    "codigo" : "Um código pin foi enviado para seu email"
 }
